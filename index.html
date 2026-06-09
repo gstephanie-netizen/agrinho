@@ -3,93 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
+    <title>Agro Forte - Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h1>🌱 Agro Forte</h1>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#praticas">Práticas Sustentáveis</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-
-        <section id="inicio" class="hero">
-            <h2>Futuro Sustentável</h2>
-            <p>Equilíbrio entre a produção agrícola e a preservação do meio ambiente.</p>
-            <button onclick="mostrarMensagem()">Saiba Mais</button>
-        </section>
-    </header>
-
-    <main>
-
-        <section id="sobre" class="container">
-            <h2>Sobre o Projeto</h2>
-            <p>
-                O agronegócio moderno busca aumentar a produtividade sem comprometer os recursos naturais.
-                A sustentabilidade é essencial para garantir alimentos de qualidade para as futuras gerações.
-            </p>
-        </section>
-
-        <section id="praticas" class="container cards">
-            <h2>Práticas Sustentáveis</h2>
-
-            <div class="card">
-                <h3>💧 Uso Inteligente da Água</h3>
-                <p>Sistemas de irrigação eficientes reduzem o desperdício e preservam os recursos hídricos.</p>
-            </div>
-
-            <div class="card">
-                <h3>🌳 Preservação Ambiental</h3>
-                <p>Proteção de matas ciliares e recuperação de áreas degradadas.</p>
-            </div>
-
-            <div class="card">
-                <h3>🚜 Tecnologia no Campo</h3>
-                <p>Agricultura de precisão aumenta a produtividade com menor impacto ambiental.</p>
-            </div>
-
-        </section>
-
-        <section class="contador">
-            <h2>Árvores Preservadas</h2>
-            <div id="numero">0</div>
-        </section>
-
-        <section class="estatisticas">
-    <h2>Impacto da Agricultura Sustentável</h2>
-
-    <div class="stats">
-        <div class="stat">
-            <h3>70%</h3>
-            <p>Economia de água com irrigação inteligente</p>
-        </div>
-
-        <div class="stat">
-            <h3>50%</h3>
-            <p>Redução do desperdício de insumos</p>
-        </div>
-
-        <div class="stat">
-            <h3>100%</h3>
-            <p>Compromisso com o futuro sustentável</p>
-        </div>
+<header>
+    <div class="logo">
+        🌱 Agro Forte
     </div>
+
+    <h1>Futuro Sustentável</h1>
+    <p>Equilíbrio entre Produção e Meio Ambiente</p>
+
+    <nav>
+        <button onclick="mostrarTema('Produção Sustentável')">Produção</button>
+        <button onclick="mostrarTema('Economia de Água')">Água</button>
+        <button onclick="mostrarTema('Reciclagem')">Reciclagem</button>
+    </nav>
+</header>
+
+<section class="banner">
+    <h2>Cultivando hoje para preservar o amanhã</h2>
+    <p>
+        O agronegócio sustentável promove desenvolvimento econômico,
+        preservação ambiental e qualidade de vida para as futuras gerações.
+    </p>
 </section>
-    </main>
 
-    <footer id="contato">
-        <h3>Agro Forte, Futuro Sustentável</h3>
-        <p>Produção responsável para um planeta mais saudável.</p>
-        <p>&copy; 2026 - Todos os direitos reservados.</p>
-    </footer>
+<main>
 
-    <script src="script.js"></script>
+    <section class="card">
+        <h2>💧 Uso Consciente da Água</h2>
+
+        <p>
+            A água é um recurso indispensável para a agricultura e para a
+            sobrevivência de todos os seres vivos. No entanto, o desperdício
+            desse recurso tem se tornado uma preocupação mundial. Técnicas
+            modernas de irrigação, como o gotejamento, ajudam a utilizar
+            apenas a quantidade necessária para cada cultura. Além disso,
+            o reaproveitamento da água da chuva e o monitoramento da umidade
+            do solo reduzem perdas e aumentam a eficiência da produção.
+            Quando produtores e consumidores adotam hábitos conscientes,
+            contribuem para a preservação dos rios, lagos e lençóis freáticos.
+            Economizar água hoje significa garantir recursos para o futuro.
+        </p>
+
+        <button class="btn" onclick="dicaAgua()">
+            Ver Dica
+        </button>
+    </section>
+
+    <section class="card">
+        <h2>♻️ Reciclagem e Reaproveitamento</h2>
+
+        <p>
+            A reciclagem desempenha um papel fundamental na redução da
+            poluição ambiental. Materiais como plástico, vidro, papel e
+            metal podem retornar ao ciclo produtivo e evitar o descarte
+            inadequado na natureza. No meio rural, resíduos orgânicos podem
+            ser transformados em compostagem, gerando fertilizantes naturais
+            para o solo. Essas práticas diminuem custos, reduzem impactos
+            ambientais e fortalecem a economia circular. Quanto maior a
+            conscientização da população, maiores serão os benefícios para
+            a sociedade e para o planeta.
+        </p>
+
+        <button class="btn" onclick="dicaReciclagem()">
+            Ver Dica
+        </button>
+    </section>
+
+    <section class="card">
+        <h2>🌿 Produção Agrícola Sustentável</h2>
+
+        <p>
+            A agricultura sustentável busca aumentar a produtividade sem
+            comprometer os recursos naturais. Práticas como rotação de
+            culturas, preservação das matas ciliares e controle biológico
+            de pragas ajudam a manter o equilíbrio ambiental. Além disso,
+            novas tecnologias permitem monitorar o solo e reduzir o uso de
+            insumos químicos. A união entre inovação e responsabilidade
+            ambiental garante alimentos de qualidade e fortalece a economia.
+            Produzir de forma sustentável é investir em um futuro mais seguro,
+            equilibrado e saudável para todos.
+        </p>
+
+        <button class="btn" onclick="dicaAgro()">
+            Ver Dica
+        </button>
+    </section>
+
+</main>
+
+<footer>
+    <p>🌱 Agro Forte - Futuro Sustentável © 2026</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

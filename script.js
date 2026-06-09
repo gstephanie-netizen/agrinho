@@ -1,34 +1,35 @@
-function mostrarMensagem(){
-    alert("A sustentabilidade no campo garante produtividade, preservação ambiental e qualidade de vida para as futuras gerações.");
+function mostrarTema(tema){
+    alert("🌱 Você selecionou: " + tema);
 }
 
-// Contador animado
-let numero = document.getElementById("numero");
-let valor = 0;
+function dicaAgua(){
+    alert(
+        "💧 Dica Sustentável:\n\n" +
+        "Feche torneiras quando não estiver utilizando e utilize sistemas de irrigação eficientes."
+    );
+}
 
-let contador = setInterval(() => {
+function dicaReciclagem(){
+    alert(
+        "♻️ Dica Sustentável:\n\n" +
+        "Separe resíduos recicláveis e incentive a reutilização de materiais."
+    );
+}
 
-    valor += 10;
-    numero.textContent = valor.toLocaleString();
+function dicaAgro(){
+    alert(
+        "🌿 Dica Sustentável:\n\n" +
+        "Utilize práticas agrícolas que preservem o solo e reduzam impactos ambientais."
+    );
+}
 
-    if(valor >= 5000){
-        clearInterval(contador);
-    }
+/* Mensagem inicial */
 
-}, 20);
-const topo = document.getElementById("topo");
-
-window.addEventListener("scroll", () =>{
-    if(window.scrollY > 300){
-        topo.style.display = "block";
-    }else{
-        topo.style.display = "none";
-    }
-});
-
-topo.addEventListener("click", ()=>{
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    });
-});
+window.onload = function(){
+    setTimeout(() => {
+        alert(
+            "🌱 Bem-vindo ao Agro Forte!\n\n" +
+            "Conheça práticas sustentáveis que ajudam a preservar o meio ambiente."
+        );
+    }, 1000);
+};
