@@ -1,106 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte - Futuro Sustentável</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Forte - Futuro Sustentável</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">
-        🌱 Agro Forte
+  <!-- HEADER -->
+  <header>
+    <div class="logo">🌱</div>
+    <h1>Agro Forte</h1>
+    <p>Futuro Sustentável: equilíbrio entre produção e meio ambiente</p>
+  </header>
+
+  <!-- SEÇÃO 1: Desperdício de Água -->
+  <section>
+    <h2>Economize Água, Preserve o Futuro</h2>
+    <div class="card">
+      <p>
+        O desperdício de água é um dos maiores desafios ambientais do nosso tempo. Cada gota conta para garantir que futuras gerações tenham acesso a esse recurso vital. Na agricultura, práticas como irrigação por gotejamento, monitoramento do solo e coleta de água da chuva são essenciais para reduzir o consumo. Além disso, conscientizar comunidades sobre o uso responsável da água ajuda a criar hábitos sustentáveis. Pequenas mudanças, como reutilizar água da lavagem de vegetais ou captar água da chuva para irrigação, podem ter grande impacto. A tecnologia e a inovação no campo podem unir produtividade e preservação, promovendo uma agricultura mais eficiente e responsável. Juntos, podemos transformar a forma como utilizamos a água e garantir um futuro mais verde e saudável para todos.
+      </p>
+      <button class="btn btn-green" data-tip="Dica: Utilize sistemas de irrigação inteligentes para economizar água!">Dica Rápida</button>
     </div>
+  </section>
 
-    <h1>Futuro Sustentável</h1>
-    <p>Equilíbrio entre Produção e Meio Ambiente</p>
+  <!-- SEÇÃO 2: Reciclagem e Reutilização -->
+  <section>
+    <h2>Reciclagem: Transformando o Lixo em Recursos</h2>
+    <div class="card">
+      <p>
+        A reciclagem é uma poderosa ferramenta para reduzir o impacto ambiental da agricultura e da vida urbana. Transformar resíduos em novos produtos diminui a quantidade de lixo nos aterros e reduz a exploração de recursos naturais. No campo, restos de plantas podem ser transformados em compostagem, fertilizando o solo sem químicos artificiais. Plásticos e embalagens podem ser coletados e reciclados, contribuindo para um ciclo sustentável. A educação ambiental é fundamental para incentivar a prática da reciclagem. Quando agricultores, empresas e cidadãos se unem, é possível criar uma economia circular, onde o desperdício se torna recurso. Com pequenas atitudes diárias, cada pessoa pode ser protagonista da sustentabilidade.
+      </p>
+      <button class="btn btn-pink" data-tip="Dica: Separe o lixo orgânico do reciclável para facilitar a reciclagem!">Dica Rápida</button>
+    </div>
+  </section>
 
-    <nav>
-        <button onclick="mostrarTema('Produção Sustentável')">Produção</button>
-        <button onclick="mostrarTema('Economia de Água')">Água</button>
-        <button onclick="mostrarTema('Reciclagem')">Reciclagem</button>
-    </nav>
-</header>
+  <!-- SEÇÃO 3: Agricultura Sustentável -->
+  <section>
+    <h2>Agricultura Sustentável: Produzir Sem Degradar</h2>
+    <div class="card">
+      <p>
+        A agricultura sustentável busca equilibrar a produção de alimentos com a preservação do meio ambiente. Técnicas como rotação de culturas, plantio direto e uso consciente de defensivos agrícolas aumentam a produtividade sem prejudicar o solo e a biodiversidade. Além disso, a integração com tecnologias de monitoramento permite reduzir desperdícios e otimizar recursos naturais. Consumidores conscientes também desempenham papel importante, escolhendo produtos de origem sustentável. A união de práticas modernas com respeito à natureza garante colheitas saudáveis e solo fértil para o futuro. Ao adotar métodos sustentáveis, agricultores contribuem para uma cadeia alimentar mais responsável e para o combate às mudanças climáticas.
+      </p>
+      <button class="btn btn-blue" data-tip="Dica: Prefira culturas locais e técnicas que preservem o solo!">Dica Rápida</button>
+    </div>
+  </section>
 
-<section class="banner">
-    <h2>Cultivando hoje para preservar o amanhã</h2>
-    <p>
-        O agronegócio sustentável promove desenvolvimento econômico,
-        preservação ambiental e qualidade de vida para as futuras gerações.
-    </p>
-</section>
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 Agro Forte | Futuro Sustentável 🌱
+  </footer>
 
-<main>
-
-    <section class="card">
-        <h2>💧 Uso Consciente da Água</h2>
-
-        <p>
-            A água é um recurso indispensável para a agricultura e para a
-            sobrevivência de todos os seres vivos. No entanto, o desperdício
-            desse recurso tem se tornado uma preocupação mundial. Técnicas
-            modernas de irrigação, como o gotejamento, ajudam a utilizar
-            apenas a quantidade necessária para cada cultura. Além disso,
-            o reaproveitamento da água da chuva e o monitoramento da umidade
-            do solo reduzem perdas e aumentam a eficiência da produção.
-            Quando produtores e consumidores adotam hábitos conscientes,
-            contribuem para a preservação dos rios, lagos e lençóis freáticos.
-            Economizar água hoje significa garantir recursos para o futuro.
-        </p>
-
-        <button class="btn" onclick="dicaAgua()">
-            Ver Dica
-        </button>
-    </section>
-
-    <section class="card">
-        <h2>♻️ Reciclagem e Reaproveitamento</h2>
-
-        <p>
-            A reciclagem desempenha um papel fundamental na redução da
-            poluição ambiental. Materiais como plástico, vidro, papel e
-            metal podem retornar ao ciclo produtivo e evitar o descarte
-            inadequado na natureza. No meio rural, resíduos orgânicos podem
-            ser transformados em compostagem, gerando fertilizantes naturais
-            para o solo. Essas práticas diminuem custos, reduzem impactos
-            ambientais e fortalecem a economia circular. Quanto maior a
-            conscientização da população, maiores serão os benefícios para
-            a sociedade e para o planeta.
-        </p>
-
-        <button class="btn" onclick="dicaReciclagem()">
-            Ver Dica
-        </button>
-    </section>
-
-    <section class="card">
-        <h2>🌿 Produção Agrícola Sustentável</h2>
-
-        <p>
-            A agricultura sustentável busca aumentar a produtividade sem
-            comprometer os recursos naturais. Práticas como rotação de
-            culturas, preservação das matas ciliares e controle biológico
-            de pragas ajudam a manter o equilíbrio ambiental. Além disso,
-            novas tecnologias permitem monitorar o solo e reduzir o uso de
-            insumos químicos. A união entre inovação e responsabilidade
-            ambiental garante alimentos de qualidade e fortalece a economia.
-            Produzir de forma sustentável é investir em um futuro mais seguro,
-            equilibrado e saudável para todos.
-        </p>
-
-        <button class="btn" onclick="dicaAgro()">
-            Ver Dica
-        </button>
-    </section>
-
-</main>
-
-<footer>
-    <p>🌱 Agro Forte - Futuro Sustentável © 2026</p>
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
